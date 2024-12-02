@@ -1,9 +1,9 @@
 import React from "react";
-import { Provider } from "react-redux"; // Redux provider for state management
+import { Provider } from "react-redux"; 
 import { store } from "./redux/store";
 import ProductScreen from "./screen/ProductScreens";
 import CartScreen from "./screen/CartScreen";
-import { createStackNavigator } from "@react-navigation/stack"; // Import stack navigator
+import { createStackNavigator } from "@react-navigation/stack"; 
 
 const Stack = createStackNavigator();
 

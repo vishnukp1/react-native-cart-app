@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../redux/cartSlice';  // Action to add items to cart
+import { addToCart } from '../redux/cartSlice';  
 
 const ProductScreen: React.FC <any> = ({ navigation }) =>  {
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ const ProductScreen: React.FC <any> = ({ navigation }) =>  {
             <Text>${item.price}</Text>
             <Button
               title="Add to Cart"
-              onPress={() => handleAddToCart(item)}  // Add item to cart
+              onPress={() => handleAddToCart(item)}  
             />
           </View>
         )}
@@ -34,7 +34,7 @@ const ProductScreen: React.FC <any> = ({ navigation }) =>  {
       />
          <Button
         title="Go to Cart"
-        onPress={() => navigation.navigate('Cart')}  // Navigate to Cart screen
+        onPress={() => navigation.navigate('Cart')}  
       />
     </View>
   );
